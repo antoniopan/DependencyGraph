@@ -1,5 +1,4 @@
 import parallel_traverse
-import simple_ioc
 import random
 import time
 
@@ -29,7 +28,7 @@ class DummyRepoBuilder(parallel_traverse.IRepoBuilder):
         return
 
     def build(self, repo_name):
-        time.sleep(float(random.randint(1, 10)) / 1000)
+        time.sleep(float(random.randint(1, 100)) / 1000)
         return
 
 
